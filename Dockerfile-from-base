@@ -1,0 +1,13 @@
+FROM 432271204011.dkr.ecr.eu-central-1.amazonaws.com/fix-php-backend-base:v0.1.0
+
+USER app
+WORKDIR /var/www
+COPY . .
+
+USER root
+RUN chown -R app:app /var/www/*
+
+USER app
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["php-fpm"]
