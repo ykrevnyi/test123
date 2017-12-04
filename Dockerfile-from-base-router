@@ -1,0 +1,7 @@
+FROM 455926664280.dkr.ecr.eu-west-2.amazonaws.com/ts/stg/0/atf/php_app/router_base:v0.2.0
+
+COPY . .
+
+CMD ["nginx"]
+
+EXPOSE 80 8888 443
