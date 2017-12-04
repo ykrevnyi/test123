@@ -1,4 +1,4 @@
-FROM 432271204011.dkr.ecr.eu-central-1.amazonaws.com/fix-php-backend-base:v0.1.0
+FROM 455926664280.dkr.ecr.eu-west-2.amazonaws.com/ts/stg/0/atf/php_app/base:v0.2.0
 
 USER app
 WORKDIR /var/www
